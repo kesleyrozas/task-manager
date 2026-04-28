@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+input,
+select,
+button {
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  background: white;
+}
+
+button {
+  cursor: pointer;
+  background: #0ea5e9;
+  color: white;
+  border-color: #0ea5e9;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #0284c7;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+a {
+  color: #0ea5e9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table th,
+table td {
+  padding: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr !important;
+  }
+}
